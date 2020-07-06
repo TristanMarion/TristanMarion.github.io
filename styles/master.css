@@ -9,7 +9,16 @@
 }
 
 :root {
-  background: var(--dark-grey);
+  background: linear-gradient(
+      to right top,
+      #051937,
+      #004d7a,
+      #008793,
+      #00bf72,
+      #a8eb12
+    ),
+    var(--almost-black);
+  background-attachment: fixed;
   color: var(--white);
   font-family: Confortaa;
 
@@ -99,14 +108,6 @@ div.logo span.title {
 section.content {
   padding-top: 80px;
   margin: 0 auto;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a,
-    #008793,
-    #00bf72,
-    #a8eb12
-  );
 }
 
 section.hero {
