@@ -180,6 +180,7 @@ section.actions-list > div {
   /* background-image: linear-gradient(to right, #000000, #0f9b0f); */
   background-attachment: fixed;
   transition: box-shadow ease-in 0.3s;
+  border-radius: 10px;
 }
 
 section.actions-list > div:hover {
