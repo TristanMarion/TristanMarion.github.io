@@ -180,7 +180,7 @@ section.actions-list > div {
   justify-content: space-around;
   align-items: center;
   background-size: 1024px 100%;
-  transition: box-shadow ease-in 0.3s;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
   border-radius: 10px;
   background-image: linear-gradient(
     to bottom right,
@@ -207,6 +207,7 @@ section.actions-list > div.collect {
 }
 
 section.actions-list > div:hover {
+  transform: scale(1.02);
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
@@ -215,40 +216,12 @@ section.actions-list img {
   width: 80%;
 }
 
-/* section.actions-list .explore {
-    background-color: var(--grey-darker);
-  }
-
-  section.actions-list .fight {
-    background-color: var(--grey);
-  }
-
-  section.actions-list .capture {
-    background-color: var(--grey-lighter);
-  }
-
-  section.actions-list .train {
-    background-color: var(--light-grey);
-  }
-
-  section.actions-list .collect {
-    background-color: var(--light-grey-lighter);
-  } */
-
-section.grey {
-  /* height: 200vh; */
-  margin-top: -128px;
-  padding-top: 128px;
-  /* background-color: var(--grey-lighter); */
-  overflow: hidden;
-}
-
-section.grey div.grey-content {
+section.description {
   margin: 0 auto;
   max-width: 1024px;
 }
 
-section.grey div.grey-content p {
+section.description p {
   text-align: center;
   font-size: 1.3rem;
   line-height: 2rem;
