@@ -99,6 +99,14 @@ div.logo span.title {
 section.content {
   padding-top: 80px;
   margin: 0 auto;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
 }
 
 section.hero {
@@ -171,16 +179,31 @@ section.actions-list > div {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(
-    to right,
-    #de5145 15%,
-    #fece42 66%,
-    #1ba261 85%
-  );
-  /* background-image: linear-gradient(to right, #000000, #0f9b0f); */
-  background-attachment: fixed;
+  background-size: 1024px 100%;
   transition: box-shadow ease-in 0.3s;
   border-radius: 10px;
+  background-image: linear-gradient(
+    to bottom right,
+    #de5145 15%,
+    #fece42 50%,
+    #1ba261 85%
+  );
+}
+
+section.actions-list > div.fight {
+  background-position: 20%;
+}
+
+section.actions-list > div.capture {
+  background-position: 40%;
+}
+
+section.actions-list > div.train {
+  background-position: 60%;
+}
+
+section.actions-list > div.collect {
+  background-position: 80%;
 }
 
 section.actions-list > div:hover {
@@ -216,7 +239,7 @@ section.grey {
   /* height: 200vh; */
   margin-top: -128px;
   padding-top: 128px;
-  background-color: var(--grey-lighter);
+  /* background-color: var(--grey-lighter); */
   overflow: hidden;
 }
 
