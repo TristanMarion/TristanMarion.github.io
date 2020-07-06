@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "Confortaa";
+  src: url("../assets/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Pokemon";
+  src: url("../assets/fonts/pokemon.ttf");
+}
+
+:root {
+  background: var(--dark-grey);
+  color: var(--white);
+  font-family: Confortaa;
+
+  --almost-black: #202020;
+  --dark-grey: #303030;
+  --grey-darker: #404040;
+  --grey: #505050;
+  --grey-lighter: #606060;
+  --light-grey: #707070;
+  --light-grey-lighter: #808080;
+
+  --dark-white: #bbbbbb;
+  --white-darker: #dddddd;
+  --white: #ffffff;
+
+  --green: #70f8a8;
+  --green-dark: #58cf80;
+  --yellow: #f8e038;
+  --yellow-dark: #c8a80a;
+  --red: #f85838;
+  --red-dark: #a84047;
+  --blue: #40c8f8;
+  --blue-dark: #487088;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+div.input-addon {
+  display: flex;
+  width: 100%;
+}
+
+div.input-addon input {
+  flex: 1;
+}
+
+div.input-addon button {
+  border: none;
+  outline: none;
+  width: 50px;
+  color: var(--white-darker);
+  background-color: var(--grey);
+}
+
+header {
+  background-color: var(--almost-black);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+div.header-content {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+div.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+div.logo img {
+  margin-right: 16px;
+}
+
+div.logo span.title {
+  font-family: Pokemon;
+}
+
+section.content {
+  padding-top: 80px;
+  margin: 0 auto;
+}
+
+section.hero {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+}
+
+section.hero > div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+section.hero div.left {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+section.hero div.left p.headline {
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+}
+
+section.hero div.left div.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+section.hero div.left div.call-to-action p.text {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+section.hero div.left div.call-to-action input {
+  background-color: var(--almost-black);
+  height: 50px;
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-family: Confortaa;
+  padding: 8px 16px;
+}
+
+section.hero div.left input::placeholder {
+  color: var(--dark-white);
+}
+
+section.actions-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+section.actions-list > div {
+  font-family: Pokemon;
+  font-size: 1rem;
+  width: 18%;
+  text-align: center;
+  height: 256px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #de5145 15%,
+    #fece42 66%,
+    #1ba261 85%
+  );
+  /* background-image: linear-gradient(to right, #000000, #0f9b0f); */
+  background-attachment: fixed;
+  transition: box-shadow ease-in 0.3s;
+}
+
+section.actions-list > div:hover {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+section.actions-list img {
+  width: 80%;
+}
+
+/* section.actions-list .explore {
+    background-color: var(--grey-darker);
+  }
+
+  section.actions-list .fight {
+    background-color: var(--grey);
+  }
+
+  section.actions-list .capture {
+    background-color: var(--grey-lighter);
+  }
+
+  section.actions-list .train {
+    background-color: var(--light-grey);
+  }
+
+  section.actions-list .collect {
+    background-color: var(--light-grey-lighter);
+  } */
+
+section.grey {
+  /* height: 200vh; */
+  margin-top: -128px;
+  padding-top: 128px;
+  background-color: var(--grey-lighter);
+  overflow: hidden;
+}
+
+section.grey div.grey-content {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section.grey div.grey-content p {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 64px 128px;
+}
